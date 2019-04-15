@@ -29,7 +29,4 @@ class OwnersController < ApplicationController
 
   end
 
-  post '/owners' do
-
-  end
 end
