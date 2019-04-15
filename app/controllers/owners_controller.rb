@@ -2,11 +2,11 @@ class OwnersController < ApplicationController
 
   get '/owners' do
     @owners = Owner.all
-    erb :'/owners/index'
+    erb '/owners/index'
   end
 
   get '/owners/new' do
-    erb :'/owners/new'
+    erb '/owners/new'
   end
 
   post '/owners' do
