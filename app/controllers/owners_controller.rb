@@ -25,7 +25,7 @@ class OwnersController < ApplicationController
 
   get '/owners/:id/edit' do
     @owner = Owner.find(params[:id])
-    erb :'/owners/edit'
+    erb '/owners/edit'
   end
 
   patch '/owners/:id' do
