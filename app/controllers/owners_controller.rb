@@ -26,4 +26,9 @@ class OwnersController < ApplicationController
   patch '/owners/:id' do 
    
   end
+
+  post '/owners' do
+    @owner = Owner.create(params[:owner])
+    redirect "owners/#{@owner.id}"
+  end
 end
